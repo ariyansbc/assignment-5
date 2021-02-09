@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    color: #1f1f1f;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.title {
+    text-transform: uppercase;
+    margin: 1.5em 0;
+}
+
+ #search-input {
+     width: 320px;
+     height: 50px;
+     border-radius: 10px;
+     padding-left: 10px;
+     outline: none;
+     font-size: 20px;
+     font-weight: 400;
+     
+ } 
+.searchBtn {
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-left: 15px;
+    background-color: orangered;
+    border-radius: 10px;
+    font-size: 15px;
+ }
+/*  error css */
+#error-area {
+   margin-top: 1.5em;
+   padding: 1.5em;
+   text-align: center;
+
+}
+#error-area h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+#error-area button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: gray;
+}
+
+/*  details area css */
+
+#details-area img {
+    width: 300px;
+}
+#details-wrapper {
+    margin-top: 1em;
+}
+#details-wrapper h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+#details-wrapper button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#details-wrapper ul {
+    
+    padding: 20px 0;
+    text-align: center;
+
+}
+#details-wrapper ul li {
+    margin-top: 10px;
+}
+/**********  result-area css *********/
+#result-area {
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5em;
+    cursor: pointer;
+
+}
+
+
+
+@media (max-width: 990px) {
+
+    #result-area {
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1.5em;
+        cursor: pointer;
+    
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    #result-area {
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1.5em;
+        cursor: pointer;
+    
+    }
+
+}
+@media (max-width: 550px) {
+
+    #result-area {
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1.5em;
+        cursor: pointer;
+    
+    }
+
+}
